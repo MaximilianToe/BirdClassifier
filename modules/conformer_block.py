@@ -6,8 +6,8 @@ from feed_forward_module import FeedForwardModule
 
 '''
 Conformer Block that is part of the Conformer model
-input shape : (batch_size, input_channels, sequence_length)
-output shape : (batch_size, input_channels, sequence_length)
+input shape : (batch_size, input_height, input_length)
+output shape : (batch_size, input_height, input_length)
 '''
 
 class ConformerBlock(nn.Module):

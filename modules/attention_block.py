@@ -3,8 +3,8 @@ import torch.nn as nn
 
 '''
 Define the Multihead Self-Attention Module
-input shape : (batch_size, input_channels, sequence_length)
-output shape : (batch_size, input_channels, sequence_length)
+input shape : (batch_size, input_height, input_length)
+output shape : (batch_size, input_height, input_length)
 '''
 
 class MHSelfAttention(nn.Module):

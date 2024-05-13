@@ -3,12 +3,14 @@ import torch.nn as nn
 from conformer_block import ConformerBlock
 from conv_subsampling import ConvSubsampling
 
+'''
+Complete Conformer model
+This combines the Convolutional Subsampling, Conformer Blocks and the final Linear layer to output a tensor of logits
+input shape : (batch_size, input_channels, input_height, input_length)
+output shape : (batch_size, num_classes)
+'''
 
 
-'''
-Conformer: Convolution-augmented Transformer for Speech Recognition
- - https://arxiv.org/abs/2005.08100
-'''
 
 class Conformer(nn.Module):
     def __init__(self, 

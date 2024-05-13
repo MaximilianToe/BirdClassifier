@@ -3,8 +3,8 @@ import torch.nn as nn
 
 '''
 Convoluation Module that is part of the ConformerBlock
-input shape : (batch_size, input_channels, sequence_length)
-output shape : (batch_size, input_channels, sequence_length)
+input shape : (batch_size, input_channels, input_height, input_length)
+output shape : (batch_size, input_channels, input_height, input_length)
 '''
 class ConvolutionModule(nn.Module):
     def __init__(self, input_channels: int, kernel_size: int ) -> None:

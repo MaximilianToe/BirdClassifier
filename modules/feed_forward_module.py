@@ -1,6 +1,10 @@
 import torch
 import torch.nn as nn
 
+'''
+input shape : (batch_size, input_length)
+output shape : (batch_size, input_length)
+'''
 
 class FeedForwardModule(nn.Module):
     def __init__(self, input_length: int) -> None:

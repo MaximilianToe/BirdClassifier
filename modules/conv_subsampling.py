@@ -1,12 +1,10 @@
-import torch
 from torch import Tensor
 import torch.nn as nn
 
 '''
-(roughly) reduces the input sequence length (time dimension) by a factor of 4
-
-input shape : (batch_size, input_channels, sequence_length)
-output shape : (batch_size, output_channels, new_sequence_length/4)
+(roughly) reduces the input length (time dimension) by a factor of 4
+input shape : (batch_size, input_channels, input_height, input_length)
+output shape : (batch_size, input_channels*subsampling_factor, input_height//2//2, input_length//2//2)
 '''
 
 
