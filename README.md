@@ -1,4 +1,8 @@
-# BirdClassifier
+<p align='center'>
+    <img src='/images/header.png'>
+</p>
+
+# BirdClassifier using Conformers
 !!!This project is still under construction!!!
 The goal of this project is to gain familiarity with the conformer architecture (based on the paper https://arxiv.org/pdf/2005.08100) and obtain hands-on experience with audio classification tasks. The project is based on the BirdCLEF 2023 dataset provided by kaggle.
 The original dataset contains audio files of 264 different bird species. The dataset we use is obtained by preprocessing the original audio files and contains black-and-white spectrograms obtained from 5-second snippets of bird sounds. The goal is to classify the bird species based on the spectrograms.
@@ -14,7 +18,7 @@ The data contains audio from 264 different bird species. However, the dataset is
 
 ## The model
 We use the conformer architecture as described in https://arxiv.org/abs/2005.08100. 
-The model is organized in the following blocks:
+The model is organized in the following blocks, each organized in separate python modules:
 - A sub-sampling block consisting of two convolutional layers with a stride of 2 reducing the input size by a factor of 4.
 - A fully connected layer
 - A conformer block consisting of a multi-head self-attention layer, a feed-forward layer and a convolutional layer.
